@@ -5,8 +5,8 @@ Reason : Use querydsl fluent API with method chaining instead of Spring reposito
 
 ### Local run steps <br/>
 1- Add querydsl dependencies into pom.xml. </br>
-2- Add querydsl code generator maven plugin apt maven plugin into pom.xml. </br/>
-3- Before starting the application run mvn clean install to generate querydsl query types from JPA entities. </br>
+2- Add querydsl code generator maven plugin apt-maven-plugin into pom.xml. </br>
+3- Before starting the application run <b>mvn clean install</b> to generate querydsl query types from JPA entities. </br>
 4- If generated querydsl types are not recognized by IntelliJ IDE then reload all maven projects. </br>
 5- Start Spring Boot REST API by running main method containing class CustomerInfoApplication.java in your IDE. <br/>
 6- Alternatively you can start your Docker container by following the commands below. <br/>
