@@ -10,6 +10,10 @@ public class SecurityConfig {
 
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
+        http.csrf().disable();
+        http.headers().frameOptions().disable();
+
         return http
                 .requiresChannel(channel ->
                         channel.anyRequest().requiresSecure())
